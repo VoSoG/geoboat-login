@@ -1,0 +1,341 @@
+
+*{
+    background-color: #4169E1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form{
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 350px;
+    margin-top: 220px;
+    justify-content: center;
+}
+
+.logo-section{
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.logo {
+    color: #161414;
+}
+
+.logo-name{
+    width: 102px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #eee9e9;
+}
+
+.text-section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-family: "Inter";
+}
+
+.title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #060708;
+}
+
+.subtitle{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1a0e0e;
+}
+
+.info{
+    margin-top: 50px;
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+}
+
+.remember{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 113px;
+}
+
+.t{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.email-title, .password-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #06080c;
+}
+
+.password-input{
+    position: relative;
+    width: 360px;
+    height: 44px;
+    border: 1px solid #090e14;
+    border-radius: 8px;
+    outline: none;
+    font-family: 'Inter';
+    font-style: normal;
+    background-color: #403c3c;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 10px;
+    color: #dbcece;
+}
+
+.email-input{
+    position: relative;
+    width: 360px;
+    height: 44px;
+    border: 1px solid #0d0f13;
+    border-radius: 8px;
+    outline: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 10px;
+    color: #dbcece;
+    background-color: #403c3c;
+}
+
+.bx-hide{
+    position: relative;
+    display: block;
+    z-index: 10;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 40px;
+    cursor: pointer;
+}
+
+.bx-x-circle{
+    position: relative;
+    display: block;
+    z-index: 10;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 40px;
+    cursor: pointer;
+}
+
+.checkbox{
+    width: 16px;
+    height: 16px;
+    border: 1px solid #0a0d10;
+    border-radius: 4px;
+}
+
+.remember-text{
+    margin-left: 10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #050506;
+}
+
+.forgot-btn{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ededed;
+}
+
+.btn-section{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.sign-in-btn{
+    padding: 12px 154px;
+    width: 360px;
+    height: 44px;
+    left: 140px;
+    top: 593px;
+    border: none;
+    color: #fffdfd;
+    font-family: "Inter";
+    background: #403c3c;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+}
+
+.sign-in-btn:hover{
+    background: #140c0c;
+    color: #05f30c;
+    transition: .4s all ease-in-out;
+    border: 1px solid #667085;
+}
+
+.sign-in-google-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #332c2c;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #e2e7ee;
+    width: 360px;
+    height: 44px;
+    left: 140px;
+    top: 653px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+}
+
+.sign-in-google-btn:hover {
+    background: #140c0c;
+    color: #05f30c;
+    transition: .4s all ease-in-out;
+}
+
+.no-account{
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #06080c;
+}
+
+.sign-up-btn{
+    margin-left: 5px;
+    font-family: "Inter";
+    color: #e1deed;
+    text-decoration: none;
+}
+
+.right-side-form{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+/* Making Responsive */
+
+@media (max-width: 1800px){
+    .image{
+        margin-top: 200px;
+        margin-right: 250px;
+        width: 280px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 1800px){
+    .image{
+        margin-left: 50px;
+    }
+
+    .main{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1600px){
+    .image{
+        margin-left: 50px;
+    }
+
+    .main{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-section{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1120px){
+    .logo-section{
+        margin-left: 400px;
+    }
+}
+
+@media (max-width: 1100px){
+    .logo-section{
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .left-side-form{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form {
+        margin: 0;
+    }
+}
